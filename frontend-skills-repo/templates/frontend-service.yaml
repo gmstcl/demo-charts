@@ -1,24 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: frontend-rollout-bluegreen-active
+  name: frontend-service
   namespace: skills
 spec:
   selector:
     app: frontend
-  ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 80
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: frontend-rollout-bluegreen-preview
-  namespace: skills
-spec:
-  selector:
-    app: frontend
+    version: {{ .Values.version }}
   ports:
   - protocol: TCP
     port: 80

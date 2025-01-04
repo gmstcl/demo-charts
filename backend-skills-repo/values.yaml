@@ -1,3 +1,6 @@
+verion: blue
+preStopSleep: 20
+
 image:
   repository: 226347592148.dkr.ecr.ap-northeast-2.amazonaws.com/demo-backend
   tag: backend-v1.1.2
