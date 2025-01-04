@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   backend-skills-repo:
   - apiVersion: v2
-    created: "2025-01-04T15:05:24.951242136Z"
+    created: "2025-01-04T15:11:44.68213765Z"
     description: A Helm chart for Kubernetes
-    digest: 05a0bc3756a3db2e08a2c2d84412733638dbc4e0fd5ecafa42ecba4eb450654f
+    digest: 7f39bac07b3c940ed201ea01566efdb709ffa04bc733675c7de08e0d1e5076fd
     name: backend-skills-repo
     type: application
     urls:
@@ -19,4 +19,4 @@ entries:
     urls:
     - https://github.com/gmstcl/demo-charts/releases/download/v1.0.0/backend-skills-repo-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-04T15:05:24.950879215Z"
+generated: "2025-01-04T15:11:44.681603969Z"
