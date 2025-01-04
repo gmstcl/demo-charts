@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite name="API Tests">
+<testcase name="GET /api">
+<failure message="Failed to reach /api endpoint"/>
+</testcase>
+<testcase name="GET /api/health"/>
+<testcase name="GET /api/time"/>
+</testsuite>
+</testsuites>
