@@ -2,24 +2,22 @@ apiVersion: v1
 entries:
   backend-skills-repo:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-01T22:30:24.5311267+09:00"
+    created: "2025-01-04T01:33:41.775689709Z"
     description: A Helm chart for Kubernetes
-    digest: 107f8af56976e8b86bbdd06c94a0a4dc86eda2bf52c062b760b944b8e421cef5
+    digest: dfed4127e34cb72a9334a0061eafdc58813f49bc7e5e6435c9bf39082ad23097
     name: backend-skills-repo
     type: application
     urls:
-    - backend-skills-repo-0.1.0.tgz
-    version: 0.1.0
+    - https://github.com/gmstcl/demo-charts/releases/download/v1.0.0/backend-skills-repo-1.0.0.tgz
+    version: 1.0.0
   frontend-skills-repo:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-01-01T22:30:24.5316291+09:00"
+    created: "2025-01-04T01:33:41.775859871Z"
     description: A Helm chart for Kubernetes
-    digest: 94423fe859d567b285bf6564e25491b2771b043438bd98820af98e25444b56c1
+    digest: eb2730c592c1c17c756508180f6500c29041fdb6d9c854b1395586a05c48f0ca
     name: frontend-skills-repo
     type: application
     urls:
-    - frontend-skills-repo-0.1.0.tgz
-    version: 0.1.0
-generated: "2025-01-01T22:30:24.5305169+09:00"
+    - https://github.com/gmstcl/demo-charts/releases/download/v1.0.0/frontend-skills-repo-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-01-04T01:33:41.775349865Z"
