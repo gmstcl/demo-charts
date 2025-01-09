@@ -1,19 +1,18 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: backend-app
   namespace: skills
 spec:
   replicas: 2
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: backend
-      version: {{ .Values.version }}
   template:
     metadata:
       labels:
         app: backend
-        version: {{ .Values.version }}
     spec:
       containers:
       - name: backend
@@ -25,3 +24,8 @@ spec:
           preStop:
             exec:
               command: ["sleep", "{{ .Values.preStopSleep }}"]
+  strategy:
+    blueGreen:
+      activeService: backend-rollout-bluegreen-active
+      previewService: backend-rollout-bluegreen-preview
+      autoPromotionEnabled: true
