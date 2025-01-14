@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: frontend
-      stage: staging
+      stage: {{ .Values.stage }}
   template:
     metadata:
       labels:
         app: frontend
-        stage: staging
+        stage: {{ .Values.stage }}
     spec:
       containers:
       - name: frontend
