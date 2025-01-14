@@ -1,5 +1,6 @@
 preStopSleep: 20
 
+stage: staging
 image:
   repository: 226347592148.dkr.ecr.ap-northeast-2.amazonaws.com/wsc24-backend
   tag: backend-v1.1.0
