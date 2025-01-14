@@ -9,12 +9,12 @@ spec:
   selector:
     matchLabels:
       app: backend
-      stage: staging
+      stage: {{ .Values.stage }}
   template:
     metadata:
       labels:
         app: backend
-        stage: staging
+        stage: {{ .Values.stage }}
     spec:
       containers:
       - name: backend
